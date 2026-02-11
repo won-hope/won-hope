@@ -1,9 +1,30 @@
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=won-hope&theme=monokai&hide_border=false&include_all_commits=false&count_private=false)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=won-hope&theme=monokai&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=won-hope&theme=monokai&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+# Hi there, I'm Won 👋
+
+> **Backend Engineer & System Architect**
+> *Building scalable, high-availability systems for real-life problem solving.*
+
+I focus on **robust architecture**, **automation**, and **data consistency**.
+Currently building a **Private Family ERP System** to optimize infant care workflows.
 
 ---
-[![](https://visitcount.itsvg.in/api?id=won-hope&icon=0&color=5)](https://visitcount.itsvg.in)
 
+### 🔭 Featured Architecture: Project OHANA
+**"Data-Driven Parenting: Automating the unseen labor of childcare."**
 
+OHANA is a centralized ERP system integrating mobile clients with Google Workspace. It ensures **idempotency** in distributed environments and secures sensitive family data with **AES-GCM encryption**.
+
+```mermaid
+graph LR
+    User((Family)) -->|Mobile App| Client[Expo/React Native]
+    Client -->|REST API| Server[Spring Boot 3.x]
+    
+    subgraph "OHANA Core (Backend)"
+        Server -->|Auth| Supabase[Supabase Auth]
+        Server -->|Data| DB[(PostgreSQL)]
+        Server -->|Batch| Scheduler[Spring Batch]
+    end
+    
+    subgraph "External Integrations"
+        Scheduler -->|OAuth2| GSheets[Google Sheets API]
+        GSheets -->|Export| Report[Daily Reports]
+    end
