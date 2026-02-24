@@ -32,4 +32,5 @@ graph LR
         Batch -->|OAuth2| GSheets[Google Sheets]
         GSheets -->|Sync| Logs[Feeding/Care Logs]
     end
+```
 🛠 Tech StackDomainTechnologiesBackend CoreClient EngineInfra & DevOpsSecurity🚀 Engineering Logs (Latest Thoughts)I document my architectural decisions and troubleshooting journeys.Moving Logic to the Server: The OHANA Refactor ✨ (Featured)Designing Idempotent APIs for Mobile ClientsSecure Token Management with AES-GCM👉 Read more at won-hope.github.io📊 GitHub Stats<div align="center"><img src="https://www.google.com/search?q=https://github-readme-stats.vercel.app/api%3Fusername%3Dwon-hope%26theme%3Dmonokai%26hide_border%3Dtrue%26include_all_commits%3Dtrue%26count_private%3Dtrue%26show_icons%3Dtrue" height="150" alt="stats graph" /><img src="https://www.google.com/search?q=https://nirzak-streak-stats.vercel.app/%3Fuser%3Dwon-hope%26theme%3Dmonokai%26hide_border%3Dtrue" height="150" alt="streak graph" /></div><div align="center"><a href="https://visitcount.itsvg.in"><img src="https://visitcount.itsvg.in/api?id=won-hope&icon=0&color=5" /></a></div>
