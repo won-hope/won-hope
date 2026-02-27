@@ -1,36 +1,56 @@
 # Hi, I'm Won 👋
 
-> **Backend Engineer & System Architect**
-> *Building scalable, server-driven architectures for real-life solutions.*
+**Software Engineer | Backend & System Architecture**
 
-I specialize in designing **robust backend systems** that ensure data consistency across distributed clients.
-Currently building **Project OHANA**, a private family ERP system, bridging **Spring Boot** logic with **Expo** mobile experiences.
+I am a software engineer focused on building robust, scalable backend systems and bridging them with seamless client experiences. I value data consistency, efficient API design, and maintainable code architecture.
+
+### 🚀 Core Competencies
+* **Backend Development:** Designing thick-server architectures with complex state management and idempotent APIs.
+* **Client Integration:** Connecting robust server logic with fluid mobile/web interfaces (e.g., Spring Boot & Expo).
+* **Problem Solving:** Translating real-life challenges into structured, automated software solutions.
 
 ---
 
-### 🔭 Featured Architecture: Project OHANA
-**"Reliable Logic, Fluid Experience."**
+### 💻 Tech Stack
 
-OHANA is designed with a **"Thick Server, Thin Client"** philosophy.
-The **Expo (React Native)** app serves as a responsive interface, while the **Spring Boot** core handles complex state management, idempotency, and 3rd-party integrations (Google Workspace).
+**Backend & Data** <br>
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=spring&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
 
-```mermaid
-graph LR
-    subgraph "Client Layer (Expo)"
-        User((Family)) -->|Touch/Input| App[Mobile App]
-        App -->|REST API| Gateway[API Gateway]
-    end
+**Frontend & Mobile** <br>
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Expo](https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white)
 
-    subgraph "Server Core (Spring Boot)"
-        Gateway -->|Logic| Service[Domain Service]
-        Service -->|Auth| Supabase[Supabase Auth]
-        Service -->|Data| DB[(PostgreSQL)]
-        Service -->|Async| Batch[Spring Batch]
-    end
-    
-    subgraph "Integration"
-        Batch -->|OAuth2| GSheets[Google Sheets]
-        GSheets -->|Sync| Logs[Feeding/Care Logs]
-    end
-```
-🛠 Tech StackDomainTechnologiesBackend CoreClient EngineInfra & DevOpsSecurity🚀 Engineering Logs (Latest Thoughts)I document my architectural decisions and troubleshooting journeys.Moving Logic to the Server: The OHANA Refactor ✨ (Featured)Designing Idempotent APIs for Mobile ClientsSecure Token Management with AES-GCM👉 Read more at won-hope.github.io📊 GitHub Stats<div align="center"><img src="https://www.google.com/search?q=https://github-readme-stats.vercel.app/api%3Fusername%3Dwon-hope%26theme%3Dmonokai%26hide_border%3Dtrue%26include_all_commits%3Dtrue%26count_private%3Dtrue%26show_icons%3Dtrue" height="150" alt="stats graph" /><img src="https://www.google.com/search?q=https://nirzak-streak-stats.vercel.app/%3Fuser%3Dwon-hope%26theme%3Dmonokai%26hide_border%3Dtrue" height="150" alt="streak graph" /></div><div align="center"><a href="https://visitcount.itsvg.in"><img src="https://visitcount.itsvg.in/api?id=won-hope&icon=0&color=5" /></a></div>
+---
+
+### 🔭 Featured Project
+
+**Project OHANA** (Private Family ERP)
+* A personalized ERP system to manage family logs and data efficiently.
+* Designed with a **"Thick Server, Thin Client"** philosophy, utilizing Spring Boot for core business logic, background batches, and secure 3rd-party integrations (Google Workspace), while relying on Expo for a lightweight, responsive mobile UI.
+
+---
+
+### 📝 Latest Engineering Thoughts
+
+* [Moving Logic to the Server: The OHANA Refactor ✨](https://won-hope.github.io)
+* [Designing Idempotent APIs for Mobile Clients](https://won-hope.github.io)
+* [Secure Token Management with AES-GCM](https://won-hope.github.io)
+
+👉 Read more at my [Engineering Blog](https://won-hope.github.io)
+
+---
+
+### 📊 GitHub Stats
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=won-hope&theme=monokai&hide_border=true&include_all_commits=true&count_private=true&show_icons=true" height="150" alt="stats graph" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=won-hope&theme=monokai&hide_border=true" height="150" alt="streak graph" />
+</div>
+<div align="center">
+  <a href="https://visitcount.itsvg.in">
+    <img src="https://visitcount.itsvg.in/api?id=won-hope&icon=0&color=5" alt="profile views" />
+  </a>
+</div>
